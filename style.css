@@ -14,7 +14,6 @@
 body {
     background-color: black;
     color: white;
-    /* overflow: hidden; */
 }
 
 .navbar {
@@ -101,7 +100,6 @@ body {
 }
 .songslist {
     cursor: pointer;
-    /* height: 385px; */
     height: 75%;
     overflow: auto;
     padding: 0 10px;

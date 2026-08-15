@@ -1,6 +1,5 @@
 let songs = [];
 let currentsong = new Audio();
-let currentIndex = 0;
 
 // Function to Fetch songs from the folder
 async function Songsfetch(lnk) {
@@ -57,7 +56,7 @@ async function Foldersfetch() {
     fd.forEach((e) => {
         fd = e.innerText;
         fd = fd.replace("/", "");
-        fd = fd.split("/")[0].replace("813", "");
+        fd = fd.split("/")[0].replace("815", "");
         foldersname.push(fd);
     });
     return foldersname;
@@ -126,7 +125,6 @@ function secondsToMinutesSeconds(seconds) {
  // Listen for timeupdate event
     currentsong.addEventListener("timeupdate", () => {
         document.querySelector(".songinfo").innerHTML = `${secondsToMinutesSeconds(currentsong.currentTime)} / ${secondsToMinutesSeconds(currentsong.duration)}`
-        // document.querySelector(".circle").style.left = (currentsong.currentTime / currentsong.duration) * 100 + "%";
     })
 
 

@@ -6,10 +6,8 @@ A Spotify-inspired music player built using HTML, CSS and JavaScript.
 
 - Browse music by folders/artists
 - Play and pause songs
-- Next and previous song controls
 - Volume control
 - Music library
-- Responsive UI
 
 ## Technologies Used
 
